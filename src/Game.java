@@ -1,5 +1,3 @@
-// TODO: Need to change tankgame class to Game
-
 package src;
 
 import java.awt.*;
@@ -92,11 +90,10 @@ public class Game extends JApplet implements Runnable{
 			System.err.println(e+"NO RESOURCE ARE FOUND!");
 		}
 
-		// TODO: Key Control for players
+
 		p1 = new Tank(tankP1, 736, 64, 5, KeyEvent.VK_A, KeyEvent.VK_D, KeyEvent.VK_W,KeyEvent.VK_S, KeyEvent.VK_SPACE);
 		p2 = new Tank(tankP2, 878, 738, 5, KeyEvent.VK_LEFT, KeyEvent.VK_RIGHT, KeyEvent.VK_UP,KeyEvent.VK_DOWN, KeyEvent.VK_ENTER);
 
-// p2 = new Tank(tankP2, 736, 1440, 5, KeyEvent.VK_LEFT, KeyEvent.VK_RIGHT, KeyEvent.VK_UP,KeyEvent.VK_DOWN, KeyEvent.VK_ENTER);
         eventManager = new EventManager();
 
         eventManager.addObserver(p1);
@@ -105,7 +102,6 @@ public class Game extends JApplet implements Runnable{
 		KeyControl key = new KeyControl();
         addKeyListener(key);
         mapPrinter();
-//        gameWorldMapReader(  );
 	}
 
     /**

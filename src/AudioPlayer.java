@@ -11,8 +11,6 @@ import javax.sound.sampled.Clip;
 
 public class AudioPlayer {
 
-	// TODO: Why does it use URL as type?
-	URL soundFile;
 	public static void player (String file, boolean isLoop){
 		try{
 			URL link = Game.getTankGame().getClass().getClassLoader().getResource(file);
